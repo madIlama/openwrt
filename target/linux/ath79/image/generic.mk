@@ -2016,6 +2016,16 @@ define Device/letv_lba-047-ch
 endef
 TARGET_DEVICES += letv_lba-047-ch
 
+define Device/liteon_wp8722-bt
+  SOC := qca9563
+  DEVICE_VENDOR := Liteon
+  DEVICE_MODEL := WP8722-BT
+  DEVICE_PACKAGES := kmod-ath10k-ct ath10k-firmware-qca9888-ct
+  IMAGE_SIZE := 15872k
+  SUPPORTED_DEVICES += wp8722-bt
+endef
+TARGET_DEVICES += liteon_wp8722-bt
+
 define Device/librerouter_librerouter-v1
   SOC := qca9558
   DEVICE_VENDOR := Librerouter
